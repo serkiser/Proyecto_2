@@ -1,0 +1,54 @@
+/* Estilo minimalista para tabla sin bordes visibles */
+.tabla-sin-orden {
+    width: 100%;
+    border-collapse: collapse; /* Elimina espacios entre celdas */
+    margin: 20px 0;
+    font-family: Arial, sans-serif;
+}
+
+.tabla-sin-orden td, .tabla-sin-orden th {
+    padding: 12px 15px; /* Espaciado interno */
+    text-align: center;   /* Alineación del texto */
+    border: none;      /* Sin bordes */
+}
+
+/* Opcional: Resaltar filas al pasar el mouse */
+.tabla-sin-orden tr:hover {
+    background-color: #f5f5f5;
+}
+
+/* Opcional: Diferenciar encabezados */
+.tabla-sin-orden th {
+    color: #3262ff;
+    font-weight: bold;
+}
+
+.fila {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.texto {
+    width: 100px; /* Ancho fijo para el texto de la izquierda */
+    margin-right: 20px; /* Separación entre texto y botones */
+}
+
+.boton_plc {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: gray;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    min-width: 80px; /* Ancho mínimo igual para ambos botones */
+    text-align: center;
+}
+
+.boton_plc:hover {
+    background-color: #5ad608;
+}
